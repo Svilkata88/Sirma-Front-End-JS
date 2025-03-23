@@ -28,8 +28,7 @@ function carRegister(carsList) {
     }
  
     let result = '';
-    for ( let { brand, models } of carRegister ) {
-        
+    for ( let { brand, models } of carRegister ) {   
         result += `${brand}\n`; 
         result += Object.entries(models) 
             .map(([model, quantity]) => `###${model} -> ${quantity}`) 
