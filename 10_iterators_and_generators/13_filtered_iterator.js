@@ -29,3 +29,4 @@ let nextValue;
 while (!(nextValue = iter.next()).done) {
     console.log(nextValue.value);
 }
+
