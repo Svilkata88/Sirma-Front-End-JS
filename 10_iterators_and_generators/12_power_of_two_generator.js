@@ -1,18 +1,19 @@
-function* powerOfTwo() {
-    let i = 0;
-
-    while ( true ) {
-        yield 2**i;
-        i++;
-    }
+function isPowerOfTwo(n) {
+    return n > 0 && Math.log2(n) % 1 === 0;
 }
 
-let gen = powerOfTwo();
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
+function* powerOfTwo() {
+    let n = 1;
+    while ( true ) {
+        if ( isPowerOfTwo(n) ) {
+            yield n;
+        }
+        n++;
+    }
+};
+
+const gen = powerOfTwo();
+
+for ( let i=0; i<=10; i++ ){
+    console.log(gen.next().value);
+}
