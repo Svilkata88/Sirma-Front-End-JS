@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>JS DOM paragraph style</title>
+</head> 
+<body>
+  <p id ='text'>JavaScript Exercises</p> 
+  <div>
+    <button onclick="changeBackground()">Change</button>
+  </div>
+</body>
+<script>
+  function changeBackground(){
+    const p = document.getElementById('text');
+    p.style.background = p.style.background === 'green' ? 'white' : 'green';
+  }
+</script>
+</html>

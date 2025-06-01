@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+</head>
+<body>
+  <p>
+    <a id="someId" type="text/html" hreflang="bg-bg" rel="nofollow" target="_blank" href="#">resources</a>
+  </p>
+  <button onclick="getAttributes()">Click here to get attributes value</button>
+</body>
+   <script>
+    function getAttributes(){
+        const a = document.getElementById('someId');
+
+        const href = a.getAttribute('href');
+        const hreflang = a.getAttribute('hreflang');
+        const rel = a.getAttribute('rel');
+        const target = a.getAttribute('target');
+        const type  = a.getAttribute('type');
+
+        a.innerHTML = `href: ${href}<br>hreflang: ${hreflang}<br>rel: ${rel}<br>target: ${target}<br>type: ${type}`;
+
+        console.log(a.getAttribute('href'))
+    
+    }
+  </script>
+
+</html>
