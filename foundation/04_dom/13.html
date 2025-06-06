@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Click on the item to change the text, or click on the button to create a new item!</h4>
+
+    <ul id="list"></ul>
+
+    <input id="input" type="text">
+    <button id="btn" onclick="createNewItem()">Create New</button>
+
+    <script>
+        function createNewItem() {
+            const list = document.getElementById('list');
+            const input = document.getElementById('input');
+            const newItem = input.value;
+
+            // creating the new Li element
+            const newLi = document.createElement('li');
+            newLi.textContent = newItem;
+            newLi.addEventListener('click', editItem);
+            list.appendChild(newLi);
+            input.value = ''
+        }
+
+        function editItem(event) {
+            const item = event.target;
+            const input = document.getElementById('input');
+            const btn = document.getElementById('btn');
+            input.value = item.textContent;
+            btn.textContent = 'Edit';
+            btn.onclick = () => {
+                btn.textContent = 'Create New';
+                item.textContent = input.value;
+                input.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
