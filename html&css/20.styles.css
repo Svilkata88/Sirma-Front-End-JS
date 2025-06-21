@@ -1,0 +1,7 @@
+.height-example {
+    /* height: 400px; */
+    background-color: blueviolet;
+    max-height: 500px;
+    /* min-height: 300px; */
+    /* overflow: hidden; */
+}

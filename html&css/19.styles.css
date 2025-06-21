@@ -1,0 +1,7 @@
+.width-example {
+    /* Set width, min-width, and max-width */
+    background-color: aqua;
+    /* width: 600px; */
+    min-width:500px;
+    max-width: 900px;
+}

@@ -1,0 +1,10 @@
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+div {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}

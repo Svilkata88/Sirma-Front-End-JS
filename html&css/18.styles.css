@@ -1,0 +1,11 @@
+.block {
+    background-color: aliceblue;
+}
+
+.inline {
+    background-color: antiquewhite;
+}
+
+.inline-block {
+    background-color: aqua;
+}
