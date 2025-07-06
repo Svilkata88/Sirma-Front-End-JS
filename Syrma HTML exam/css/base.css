@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Istok+Web&display=swap'); 
+
+/* -----------------------------------------------------------------------
+                                BASE CSS
+----------------------------------------------------------------------- */
+
+:root {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+
+    --White: #FFFFFF;
+    --black: #000000;
+    --gray: #4F4F53;
+    --light-gray: #F5F5F5;  
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    color: var(--White);
+    background-color: black;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.btn-white {
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    color: var(--black);
+    background-color: #FFFFFF;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.display-1x {
+    font-size: 3.75rem;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 120%;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight: 500;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-weight: 600;
+    margin: 0;
+}

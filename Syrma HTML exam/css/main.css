@@ -1,0 +1,173 @@
+/* -----------------------------------------------------------------------
+                                MAIN STYLES
+----------------------------------------------------------------------- */
+
+.section-wrapper {
+    padding: 80px 31px;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.img-setup {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img-wrapper {
+    width: 29.86vw; 
+    aspect-ratio: 1 / 0.93;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------- */
+.places {
+    gap: 40px;
+}
+.places-top {
+    text-align: center;
+    max-width: 763px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px
+}
+.places-top h1 {
+    padding: 0 35px;
+}
+.places-top p {
+    font-size: 1.125rem;
+    max-width: 460px;
+}
+.places-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.how-it-works {
+    max-width: 1400px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+}
+.how-works-left {
+    align-items: baseline;
+    gap: 48px;
+    max-width: 590px;
+}
+.how-works-left-first p {
+    color: var(--gray);
+    margin-top: 1rem;
+}
+.how-works-left-second {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: minmax(1fr 60px) minmax(1fr 60px) minmax(1fr 60px);
+    gap: 24px;
+    max-width: 397px;
+}
+.how-works-left-second p {
+    color: var(--gray);
+    margin: 8px 0 0 0;
+}
+.how-works-left-second > div:nth-of-type(2n-1) {
+    height: 64px;
+}
+.how-works-right {
+    max-width: 576px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.travel-plans {
+    align-items:center;
+    gap: 40px;
+}
+.plans-first {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+.plan-second {
+    display: flex;
+    gap: 24px;
+}
+
+.plan-third a {
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.travelers-feedback {
+    gap: 40px;
+}
+.travelers-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.travelers-messages {
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.traveler-card {
+    width: 400px;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #E5E5E5;
+}
+.traveler-card-top {
+    margin-bottom: 29px;
+    min-height: 180px;
+    max-width: 336px;
+}
+.traveler-card-img-container {
+    margin-bottom: 8px;
+}
+.traveler-card-text-container > p {
+    color: var(--gray);
+    margin: 0;
+    margin-top: 4px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.ready-to-explore {
+    padding-bottom: 80px;
+}
+.explore-inner-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 92px 0;
+    padding: 64px;
+    border-radius: 16px;
+    background-color: var(--light-gray);
+}
+.explore-left {
+    max-width: 548px;
+}
+.explore-left p {
+    margin-top: 16px;
+    color: var(--gray);
+}
+.explore-right {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+}
+.explore-right a:first-of-type {
+    background-color: var(--light-gray);
+    border-radius: 40px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}

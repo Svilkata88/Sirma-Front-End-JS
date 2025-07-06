@@ -1,0 +1,77 @@
+/* -----------------------------------------------------------------------
+                                HEADER STYLES
+----------------------------------------------------------------------- */
+
+header {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../images/places-to-visit-in-bulgaria.jpg");
+    background-size: fill;         
+    background-position:top;
+    background-repeat: no-repeat;
+    padding: 20px 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    border-radius: 16px;
+    color: var(--White);
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner-nav {
+    display: flex;
+    margin: 7.5px 60px;
+    padding: 7.5px 32px;
+}
+.nav ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    padding: 0 170.75px;
+}
+.nav ul li:first-of-type {
+    width: 177.49px;
+    height: 30px; 
+}
+.nav ul li:first-of-type img {
+    color: var(--White)
+}
+.accounts {
+    display: flex;
+    align-items: center;
+}
+.accounts ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.accounts ul li:first-of-type {
+    padding: 12px 20px;
+}
+.intro-container {
+    max-width: 608px;
+    text-align: center;
+    margin: 0 auto;
+}
+.intro-heading {
+    margin-bottom: 24px;
+}
+.intro-text {
+    margin-bottom: 40px;
+}
+.metrics-container {
+    display: flex;
+    padding: 0 80px;
+    justify-content: space-between;
+    text-align: center;
+}
+.metric-number {
+    margin-bottom: 8px;
+}
+.metric-destination {
+    font-size: 1.125rem;
+}

@@ -1,0 +1,56 @@
+/* -----------------------------------------------------------------------
+                                FOOTER STYLES
+----------------------------------------------------------------------- */
+ footer {
+    background-color: var(--black);
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 48px 31px 24px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+ }
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+.top-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.top-right input[type="email"] {
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    margin-right: 16px;
+}
+.top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.top-left > div {
+    height: 30px;
+    display: inline-block;
+}
+.top-left p {
+    margin: 0;
+}
+.top-left > ul {
+    display: flex;
+    gap: 32px;
+}
+.footer-bottom {
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-between;
+}
+.footer-bottom ul {
+    display: flex;
+    gap: 16px;
+}
+.footer-bottom a {
+    color: var(--White);
+}
